@@ -1,0 +1,30 @@
+name: Update Changelog
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+      - name: Install conventional-changelog-cli Package
+        run: npm install conventional-changelog-cli
+      - name: Generate new changelog entries
+        run: npm run generate-changelog
+      - name: Commit Changelog
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Github Actions"
+          git add CHANGELOG.md
+          git commit -m "docs: Updated CHANGELOG.MD"
+      - name: Checking some stuff
+        run: |
+          git remote -v
+          git show-ref
+      - name: Push new Changelog
+        run: git push origin gh-pages
