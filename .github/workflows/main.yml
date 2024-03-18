@@ -12,6 +12,11 @@ jobs:
         with:
           ref: gh-pages
           fetch-depth: 0
+      - name: Update project version in package.json
+        run: |
+          TAG_NAME="${GITHUB_REF#refs/tags/}"
+          echo "Updating package.json version to $TAG_NAME"
+          npm version "$TAG_NAME" --no-git-tag-version
       - name: Install conventional-changelog-cli Package
         run: npm install conventional-changelog-cli
       - name: Generate new changelog entries
@@ -20,11 +25,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Github Actions"
-          git add CHANGELOG.md
-          git commit -m "docs: Updated CHANGELOG.MD"
-      - name: Checking some stuff
-        run: |
-          git remote -v
-          git show-ref
+          git add CHANGELOG.md package.json
+          git commit -m "docs: Updated app version and CHANGELOG.MD"
       - name: Push new Changelog
         run: git push origin gh-pages
