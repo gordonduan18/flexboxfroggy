@@ -18,11 +18,14 @@ jobs:
           echo "Updating package.json version to $TAG_NAME"
           npm version "$TAG_NAME" --no-git-tag-version
       - name: Install conventional-changelog-cli Package
-        run: npm install conventional-changelog-cli
+        run: |
+          echo "Installing conventional-changelog-cli package to generate the new changelog"
+          npm install conventional-changelog-cli
       - name: Generate new changelog entries
         run: npm run generate-changelog
       - name: Commit Changelog
         run: |
+          echo "Commiting the changes that we made to CHANGELOG.md and package.json"
           git config --local user.email "action@github.com"
           git config --local user.name "Github Actions"
           git add CHANGELOG.md package.json
