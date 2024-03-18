@@ -1,6 +1,6 @@
 {
   "name": "flexboxfroggy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A game for learning CSS flexbox",
   "scripts": {
     "generate-changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0"
@@ -8,9 +8,9 @@
   "main": "game.js",
   "dependencies": {
     "animate.css": "^3.4.0",
+    "conventional-changelog-cli": "^4.1.0",
     "jquery": "^3.5.1"
   },
-  "devDependencies": {},
   "author": "Thomas Park",
   "license": "MIT"
 }
