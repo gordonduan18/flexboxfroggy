@@ -1,6 +1,6 @@
 var docs = {
   'align-content': {
-    'en': '<p>Aligns a fr\'s lines within the flex container when there is extra space on the cross-axis.</p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code> <code>stretch (default)</code>',
+    'en': '<pfr\'s lines within the flex container when there is extra space on the cross-axis.</p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code> <code>stretch (default)</code>',
     'af': '<p>Rig die flex houer se lyne binne die flex houer wanneer daar ekstra spasie is op die kruis-as. </p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code> <code>stretch (verstek)</code>',
     'he': '<p>יישור שורות בתוך ה-flex כשיש מקום מיותר בציר המשני.</p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code> <code>stretch (default)</code>',
     'ro': '<p>Aliniază liniile unui container flex cu containerul flex cand există spațiu în plus pe axa transversală.</p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code> <code>stretch (default)</code>',
