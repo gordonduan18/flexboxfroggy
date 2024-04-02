@@ -1,3 +1,12 @@
+## [1.1.2](https://github.com/gordonduan18/flexboxfroggy/compare/v1.1.1...v1.1.2) (2024-04-02)
+
+
+### Bug Fixes
+
+* Fixed problem with game end screen where GIF does not play correctly ([69077ed](https://github.com/gordonduan18/flexboxfroggy/commit/69077edfbbb26b19c56ce186846ee00d848964ff))
+* Resolve issue in level 20 when level can end with improper solution ([ead3e95](https://github.com/gordonduan18/flexboxfroggy/commit/ead3e95eb66b30d9cb283454f09b2b92d55c79a6))
+* Resolved problem with language switching ([2c94e87](https://github.com/gordonduan18/flexboxfroggy/commit/2c94e8795a40daac9707616a1712916f218ed4a8))
+
 ## [1.1.1](https://github.com/gordonduan18/flexboxfroggy/compare/v1.1.0...v1.1.1) (2024-03-19)
 
 
